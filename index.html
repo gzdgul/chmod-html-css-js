@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CHMOD | Gözde Gül</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="console">
+            <div class="bar">
+                <div class="title">
+                    <p>Terminal</p>
+                    <button>x</button>
+                </div>
+                <div class="operations">
+                    <button onclick="alert('Yapamam Abi...')">-</button>
+                    <button onclick="toggle()">o</button>
+                    <button class="exit" onclick="alert('Tabi Efendim...')">x</button>
+                </div>
+            </div>
+            <div class="main">
+                <div style="padding: 0.5rem;">
+                    <label>
+                        C:\Users\gozdegul>
+                        <input id="girdi" value="drwxr-x--x -a" autofocus onkeypress="decode(event)">
+                    </label>
+                    <div id="cikti" style="padding-top: 0.5rem;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./index.js"></script>
+</html>
